@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Features
+
+- Add `enableTombstone` option for improved native crash reporting on Android 12+ ([#3526](https://github.com/getsentry/sentry-dart/pull/3526))
+  - When enabled, uses Android's `ApplicationExitInfo.REASON_CRASH_NATIVE` to capture native crashes with more detailed thread information
+  - Disabled by default
+
 ### Fixes
 
 - Dont guard user attributes behind `sendDefaultPii` for logs and metrics ([#3524](https://github.com/getsentry/sentry-dart/pull/3524))
