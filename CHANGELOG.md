@@ -21,6 +21,12 @@
   - [changelog](https://github.com/getsentry/sentry-java/blob/main/CHANGELOG.md#8330)
   - [diff](https://github.com/getsentry/sentry-java/compare/8.32.0...8.33.0)
 
+<summary><b>Internal Changes</b></summary>
+
+- Add `sentry.javascript.browser.flutter` sdk name for native js errors ([#3525](https://github.com/getsentry/sentry-dart/pull/3525))
+
+</details>
+
 ## 9.13.0
 
 ### Features
