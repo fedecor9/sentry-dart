@@ -39,7 +39,7 @@ class SentryNativeCocoa extends SentryNativeChannel {
 
             final replayId = replayIdArg == null
                 ? null
-                : SentryId.fromId(replayIdArg as String);
+                : SentryId.fromId((replayIdArg as String?)?? '00000000000000000000000000000000');
 
             if (_replayId != replayId) {
               _replayId = replayId;
